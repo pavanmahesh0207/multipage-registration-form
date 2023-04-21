@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multi-page Registration form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Multi-page Registration form</h1>
+    <div class="container">
+      <h2>Personal Details</h2>
+      <form>
+        <div class="name-fields">
+          <label>Name <span class="required-color">*</span></label>
+          <div class="name">
+            <div class="input-section">
+              <input
+                type="text"
+                placeholder="Enter First Name"
+                id="first-name-input"
+                required
+              />
+              <span
+                id="first-name-error"
+                class="hide required-color error-message"
+                >Invalid Input</span
+              >
+              <span
+                id="empty-first-name"
+                class="hide required-color error-message"
+                >First Name Cannot Be Empty</span
+              >
+            </div>
+            <div class="input-section">
+              <input
+                type="text "
+                placeholder="Enter Last Name"
+                id="last-name-input"
+                required
+              />
+              <span
+                id="last-name-error"
+                class="hide required-color error-message"
+                >Invalid Input</span
+              >
+              <span
+                id="empty-last-name"
+                class="hide required-color error-message"
+              >
+                Last Name Cannot Be Empty
+              </span>
+            </div>
+          </div>
+          <div class="dob">
+            <label>Date of Birth <span class="required-color">*</span></label>
+            <input id="date" type="date" required />
+          </div>
+          <div class="email">
+            <label>Email <span class="required-color">*</span></label>
+            <input type="email" placeholder="Enter Email" id="email" required />
+            <span id="email-error" class="hide required-color error-message"
+              >Invalid Email</span
+            >
+            <span id="empty-email" class="hide required-color error-message"
+              >Email Cannot Be Empty</span
+            >
+          </div>
+          <div class="father">
+            <label>Father's Name <span class="required-color">*</span></label>
+            <div class="name">
+              <div class="input-section">
+                <input
+                  type="text"
+                  placeholder="Enter First Name"
+                  id="father-first-name-input"
+                  required
+                />
+                <span
+                  id="father-first-name-error"
+                  class="hide required-color error-message"
+                  >Invalid Input</span
+                >
+                <span
+                  id="father-empty-first-name"
+                  class="hide required-color error-message"
+                  >First Name Cannot Be Empty</span
+                >
+              </div>
+              <div class="input-section">
+                <input
+                  type="text "
+                  placeholder="Enter Last Name"
+                  id="father-last-name-input"
+                  required
+                />
+                <span
+                  id="father-last-name-error"
+                  class="hide required-color error-message"
+                  >Invalid Input</span
+                >
+                <span
+                  id="father-empty-last-name"
+                  class="hide required-color error-message"
+                >
+                  Last Name Cannot Be Empty
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="mother">
+            <label>Mother's Name <span class="required-color">*</span></label>
+            <div class="name">
+              <div class="input-section">
+                <input
+                  type="text"
+                  placeholder="Enter First Name"
+                  id="mother-first-name-input"
+                  required
+                />
+                <span
+                  id="mother-first-name-error"
+                  class="hide required-color error-message"
+                  >Invalid Input</span
+                >
+                <span
+                  id="mother-empty-first-name"
+                  class="hide required-color error-message"
+                  >First Name Cannot Be Empty</span
+                >
+              </div>
+              <div class="input-section">
+                <input
+                  type="text "
+                  placeholder="Enter Last Name"
+                  id="mother-last-name-input"
+                  required
+                />
+                <span
+                  id="mother-last-name-error"
+                  class="hide required-color error-message"
+                  >Invalid Input</span
+                >
+                <span
+                  id="father-empty-last-name"
+                  class="hide required-color error-message"
+                >
+                  Last Name Cannot Be Empty
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <label>Gender<span class="required-color">*</span></label>
+        <div class="gender">
+          <input type="radio" id="male" name="Gender" value="Male" />
+          <em for="male">Male</em>
+          <br />
+
+          <input type="radio" id="Female" name="Gender" value="Female" />
+          <em for="Female">Female</em>
+          <br />
+        </div>
+        <div class="name-fields">
+          <div class="nation">
+            <label>Nationality <span class="required-color">*</span></label>
+            <input
+              type="text"
+              placeholder="Enter Nationality"
+              id="nation"
+              required
+            />
+            <span id="nation-error" class="hide required-color error-message"
+              >Invalid Input</span
+            >
+            <span id="empty-nation" class="hide required-color error-message"
+              >Field Cannot Be Empty</span
+            >
+          </div>
+          <div class="adress">
+            <label>Home Address<span class="required-color">*</span></label>
+            <input
+              class="input"
+              type="text"
+              id="home-address"
+              placeholder="Street addres"
+            />
+            <div class="name">
+              <input
+                class="adress"
+                type="text"
+                id="city-adress"
+                placeholder="City"
+              />
+              <select name="country" id="country" required>
+                <option selected disabled>Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Australia">Australia</option>
+              </select>
+            </div>
+          </div>
+          <div class="mobile">
+            <label
+              >Telephone Mobile <span class="required-color">*</span></label
+            >
+            <input
+              type="number"
+              placeholder="Enter Phone Number"
+              id="phone"
+              required
+            />
+            <span id="phone-error" class="hide required-color error-message"
+              >Phone Number Should Have 10 Digits</span
+            >
+            <span id="empty-phone" class="hide required-color error-message">
+              Phone cannot be empty
+            </span>
+          </div>
+        </div>
+        <button id="submit-button">Submit</button>
+      </form>
+    </div>
+    <div class="page2 container">
+      <h2>Academic Details</h2>
+      <form>
+        <div class="name-fields">
+          <div class="hsc-details">
+            <label
+              >HSC Institution Name<span class="required-color">*</span></label
+            >
+            <input
+              class="input"
+              type="text"
+              id="HSCInstitutionName"
+              placeholder="Enter HSC Institution name"
+            />
+
+            <div class="name">
+              <div>
+                <label>percentage<span class="required-color">*</span></label>
+                <input
+                  class="adress"
+                  type="text"
+                  id="HSCpercentage"
+                  placeholder="Score in HSC in percentage"
+                />
+              </div>
+              <div class="board">
+                <label
+                  >HSC Board<span class="required-color style">*</span></label
+                >
+                <select class="style" name="country" id="hscBoard" required>
+                  <option selected disabled>Select Board</option>
+                  <option value="CBSC">CBSC</option>
+                  <option value="ICSC">ICSC</option>
+                  <option value="State board">State board</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="ssc-details">
+            <label
+              >SSC Institution Name<span class="required-color">*</span></label
+            >
+            <input
+              class="input"
+              type="text"
+              id="SSCInstitutionName"
+              placeholder="Enter SSC Institution name"
+            />
+
+            <div class="name">
+              <div>
+                <label>percentage<span class="required-color">*</span></label>
+                <input
+                  class="adress"
+                  type="text"
+                  id="sscPercentage"
+                  placeholder="Score in SSC in percentage"
+                />
+              </div>
+              <div class="board">
+                <label
+                  >SSC Board<span class="required-color style">*</span></label
+                >
+                <select class="style" name="country" id="sscBoard" required>
+                  <option selected disabled>Select Board</option>
+                  <option value="CBSC">CBSC</option>
+                  <option value="ICSC">ICSC</option>
+                  <option value="State board">State board</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="pursing">
+            <label
+              >Currently pursuing <span class="required-color">*</span></label
+            >
+            <input
+              type="text"
+              placeholder="Enter Yes or No"
+              id="pursuing"
+              required
+            />
+            <span id="nation-error" class="hide required-color error-message"
+              >Invalid Input</span
+            >
+            <span id="empty-nation" class="hide required-color error-message"
+              >Field Cannot Be Empty</span
+            >
+          </div>
+          <div class="institution-name">
+            <label
+              >Current educational institution name<span class="required-color"
+                >*</span
+              ></label
+            >
+            <input
+              type="text"
+              placeholder="Enter Current educational institution name"
+              id="institutionName"
+              required
+            />
+            <span id="nation-error" class="hide required-color error-message"
+              >Invalid Input</span
+            >
+            <span id="empty-nation" class="hide required-color error-message"
+              >Field Cannot Be Empty</span
+            >
+          </div>
+          <div class="name">
+            <div>
+              <label
+                >Overall percentage<span class="required-color">*</span></label
+              >
+              <input
+                class="adress"
+                type="text"
+                id="OverallPercentage"
+                placeholder="Enter Overall percentage"
+              />
+            </div>
+            <div class="board">
+              <label
+                >Current backlogs if any<span class="required-color style"
+                  >*</span
+                ></label
+              >
+              <select class="style" name="country" id="backlogs" required>
+                <option selected disabled>Select Option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+            </div>
+          </div>
+          <button id="educationButton">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="page3 name-fields container">
+      <h2>Documents</h2>
+      <label>Recent passport size photograph (image size less than 4MB)</label>
+      <input type="file" />
+      <label>HSC mark sheet (image, PDF or docs size less than 4MB)</label>
+      <input type="file" />
+      <label>SSC mark sheet (image, PDF or docs size less than 4MB)</label>
+      <input type="file" />
+      <label
+        >All semesters mark sheet in a single PDF or docs (file size less than
+        10MB)</label
+      >
+      <input type="file" />
+      <button class="button">upload</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
